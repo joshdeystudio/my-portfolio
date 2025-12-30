@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josh Dey - Portfolio</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        
+        <i class='bx bx-menu' id="menu-icon"></i> 
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Josh Dey</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I create modern designs and bring ideas to life with creativity and technology. Explore my portfolio to see my works.</p>
+            
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61552244233981"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/josh-dey-a4b21a295/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            
+            <a href="https://drive.google.com/file/d/1cwnu8mhN6x530oMaCe-NxL5RbLWgocz_/view?usp=sharing" class="btn">Download CV</a>
+        </div>
+        
+        <div class="home-image">
+            <img src="josh.png" alt="Josh">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="josh.png" alt="Josh Dey Profile">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Graphic Designer & Creative Developer</h3>
+            <p>
+                I am <strong>Josh Dey</strong>, a CSE student and a multi-disciplinary Graphic Designer. 
+                I specialize in bridging the gap between <strong>art and technology</strong> to build 
+                meaningful digital experiences. With a strong eye for detail, I focus on creating 
+                modern visual identities that leave a lasting impact.
+            </p>
+
+           <div class="skills-content">
+    <div class="progress">
+        <h3>Graphic Design <span>95%</span></h3>
+        <div class="bar"><span class="graphic-design"></span></div>
+    </div>
+
+    <div class="progress">
+        <h3>Web Development <span>80%</span></h3>
+        <div class="bar"><span class="web-dev"></span></div>
+    </div>
+
+    <div class="progress">
+        <h3>UI/UX Design <span>85%</span></h3>
+        <div class="bar"><span class="ui-ux"></span></div>
+    </div>
+</div>
+
+            <div class="tools-used">
+                <h4>Top Tools:</h4>
+                <div class="tool-icons">
+                    <i class='bx bxl-adobe' title="Adobe Suite"></i>
+                    <i class='bx bxl-figma' title="Figma"></i>
+                    <i class='bx bxl-html5' title="HTML5"></i>
+                    <i class='bx bxl-css3' title="CSS3"></i>
+                    <i class='bx bxl-javascript' title="JavaScript"></i>
+                    <i class='bx bxl-visual-studio' title="VS Code"></i>
+                </div>
+            </div>
+
+            <a href="javascript:void(0)" class="btn" onclick="openModal('Professional Summary', 'I have completed over 20+ successful projects, specializing in branding, web interfaces, and digital art. My CSE background helps me understand the technical side of development while maintaining creative excellence.')">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>I build high-performance, responsive websites with clean code and modern technology.</p>
+                <a href="javascript:void(0)" class="btn" onclick="openModal('Web Development', 'I specialize in creating SEO-friendly, fast-loading, and fully responsive websites. Whether it is a landing page or a complex web app, I ensure top-notch performance and clean UI/UX.')">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Design is about communication. I create visual identities that tell your unique story.</p>
+                <a href="javascript:void(0)" class="btn" onclick="openModal('Graphic Design', 'With expertise in Adobe Photoshop and Illustrator, I provide branding solutions, logo design, social media kits, and high-quality print materials to make your brand stand out.')">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>I help businesses grow their online presence through strategic marketing solutions.</p>
+                <a href="javascript:void(0)" class="btn" onclick="openModal('Digital Marketing', 'I focus on driving real results through SEO optimization, Social Media Management, and Content Strategy. My goal is to increase your brand visibility and user engagement.')">Read More</a>
+            </div>
+        </div>
+
+        <div id="serviceModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="tid final45.jpg" alt="Web Project">
+                <div class="portfolio-layer">
+                    <h4>Tech Index Website</h4>
+                    <p>A modern landing page design for a tech agency using clean UI principles.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="durga.jpg" alt="Graphic Design">
+                <div class="portfolio-layer">
+                    <h4>Durga Puja Card</h4>
+                    <p>Traditional and cultural invitation card design with vibrant aesthetics.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="gig 2.jpg" alt="Branding">
+                <div class="portfolio-layer">
+                    <h4>Brand Identity</h4>
+                    <p>Complete branding mockup including merchandise and stationery design.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="may day tid.jpg" alt="Social Media">
+                <div class="portfolio-layer">
+                    <h4>May Day Banner</h4>
+                    <p>Professional social media post design for organizational campaigns.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="wub m.jpg" alt="Mobile App">
+                <div class="portfolio-layer">
+                    <h4>WUB Mobile UI</h4>
+                    <p>Clean and user-friendly mobile application interface for educational platforms.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" name="from_name" placeholder="Full Name" required>
+                <input type="email" name="user_email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="phone_num" placeholder="Mobile Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn" id="submit-btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Josh | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
