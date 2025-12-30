@@ -140,7 +140,7 @@ if (contactForm) {
          * Send the form using Service ID and Template ID
          * IDs correspond to EmailJS dashboard configuration
          */
-        emailjs.sendForm('service_i3gphhl', 'template_37yhodm', this)
+        emailjs.sendForm('service_meszofm', 'template_37yhodm', this)
             .then(function() {
                 alert('Success! Your message has been sent.');
                 submitBtn.value = 'Send Message';
